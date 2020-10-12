@@ -17,6 +17,7 @@ public:
 	void clear_block(const short x, const short y, const short b, const short l);
 	short get_x_max();
 	void out_put();
+	void remove_check();
 	//void move_block();
 	//void to_down();
 };

@@ -60,22 +60,22 @@ void board::theme() {
 }
 
 
-//void board::remove_check() {
-//	for (auto y = 0; y < y_max; y++) {
-//		auto count = 0;
-//		for (auto x = 0; x < x_max; x++)
-//			if (line_[y][x] == 2)
-//				count++;
-//		if (count < x_max - 2)
-//			continue;
-//		goto_xy(2, y);
-//		for (auto x = 1; x < x_max; x++) {
-//			line_[y][x] = 0;
-//			if (x >= x_max - 1)
-//				continue;
-//			std::cout << "  ";
-//			Sleep(100 - sleep_time);
-//		}
-//	}
-//}
+void board::remove_check() {
+	for (auto y = 0; y < this->y_max; y++) {
+		auto count = 0;
+		for (auto x = 0; x < this->x_max; x++)
+			if (this->line_[y][x] == 2)
+				count++;
+		if (count < this->x_max - 2)
+			continue;
+		goto_xy(2, y);
+		for (auto x = 1; x < this->x_max - 1; x++) {
+			this->line_[y][x] = 0;
+			if (x >= this->x_max - 1)
+				continue;
+			std::cout << "  ";
+			Sleep(30);
+		}
+	}
+}
 

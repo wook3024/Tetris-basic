@@ -123,3 +123,7 @@ void block::out_put() {
 short block::get_x_max() {
 	return this->board.get_x_max();
 }
+
+void block::remove_check() {
+	this->board.remove_check();
+}
