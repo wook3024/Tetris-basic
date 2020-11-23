@@ -8,12 +8,13 @@ void util::goto_xy(const short x, const short y) {
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), cur);
 }
 
+
 void util::set_color(const unsigned short text, const unsigned short back) {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), text | (back << 4));
 }
 
-void util::CursorView(char show)
-{
+
+void util::CursorView(char show) {
 	HANDLE hConsole;
 	CONSOLE_CURSOR_INFO ConsoleCursor;
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);

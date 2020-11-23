@@ -15,5 +15,5 @@ public:
 	void out_put();
 	void theme();
 	void remove_check();
-	//void game_over();
+	std::string select_mode();
 };
