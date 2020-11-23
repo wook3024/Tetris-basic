@@ -61,8 +61,6 @@ void run() {
 				}
 				language_mode->print_clear();
 				language_mode->print_key_sheet(score);
-				/*language_mode->print_score();
-				language_mode->print_cur_speed();*/
 				cur_language = language;
 			}
 
